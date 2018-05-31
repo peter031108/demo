@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import NavLink from '../NavLink';
+// import { Link } from 'react-router-dom';
+// import NavLink from '../NavLink';
+import Header from '../Header';
+import SideBar from '../SideBar';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -9,17 +11,21 @@ export default class App extends React.Component {
   render() {
     console.log(this.props);
     return (
-      <div className="w3-container w3-sidebar w3-bar-block" style={{width: "25%"}}>
-        <h1>React Router Tutorial</h1>
-        <Link className="w3-bar-item w3-button" to="/">Home</Link>
-        <Link className="w3-bar-item w3-button" to="/about">About</Link>
-        <Link className="w3-bar-item w3-button" to="/repos/react-routepos">Repos</Link>
-        <Link className="w3-bar-item w3-button" to="/user">User</Link>
-        <NavLink className="w3-bar-item w3-button" to="/contacts">Contacts</NavLink>
+      <div>
+        <Header />
+        <SideBar />
       </div>
     );
   }
 }
+        // <div className="w3-container w3-sidebar w3-bar-block w3-dark-grey" style={{width: "25%"}}>
+
+        //   <Link className="w3-bar-item w3-button" to="/">Home</Link>
+        //   <Link className="w3-bar-item w3-button" to="/about">About</Link>
+        //   <Link className="w3-bar-item w3-button" to="/repos/react-route">Repos</Link>
+        //   <Link className="w3-bar-item w3-button" to="/user">User</Link>
+        //   <NavLink className="w3-bar-item w3-button" to="/contacts">Contacts</NavLink>
+        // </div>
 // const App = (props) => (
 //   <div>
 //     <h1>React Router Tutorial</h1>

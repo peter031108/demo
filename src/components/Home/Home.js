@@ -9,7 +9,6 @@ export default class Home extends React.Component {
     };
   }
   render() {
-    console.log('HI');
     return (
       <div className="content-container">{this.state.home}</div>
     );
